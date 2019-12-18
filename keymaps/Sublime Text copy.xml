@@ -2,9 +2,13 @@
   <action id="ActivateTerminalToolWindow">
     <keyboard-shortcut first-keystroke="shift alt i" />
   </action>
+  <action id="AddToFavoritesPopup" />
   <action id="CodeInspection.OnEditor" />
   <action id="EditorUnindentSelection">
     <keyboard-shortcut first-keystroke="shift tab" />
+  </action>
+  <action id="FindInPath">
+    <keyboard-shortcut first-keystroke="shift alt f" />
   </action>
   <action id="PrevParameter" />
   <action id="PrevTemplateParameter" />
