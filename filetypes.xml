@@ -1,8 +1,8 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="*_view.php" type="HTML" />
       <removed_mapping pattern="*_view.html" approved="true" type="HTML" />
-      <removed_mapping pattern="*_view.php" approved="true" type="HTML" />
       <removed_mapping pattern="*_js_view.php" approved="true" type="JavaScript" />
       <removed_mapping pattern="20191211000000_test_request_comments.sql" approved="true" type="SQL" />
     </extensionMap>
