@@ -529,8 +529,15 @@
     </option>
     <option name="PHP_COMMENT">
       <value>
+        <option name="FOREGROUND" value="a8c19" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="PHP_DOC_COMMENT_ID">
+      <value>
         <option name="FOREGROUND" value="468847" />
-        <option name="FONT_TYPE" value="1" />
+        <option name="FONT_TYPE" value="2" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_HEREDOC_ID">
@@ -541,6 +548,12 @@
     <option name="PHP_IDENTIFIER">
       <value>
         <option name="FOREGROUND" value="a74a9" />
+      </value>
+    </option>
+    <option name="PHP_KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="ff" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_SCRIPTING_BACKGROUND">
