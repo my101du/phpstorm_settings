@@ -4,7 +4,7 @@
     <property name="created">2019-12-20T11:00:24</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.3.0.0</property>
-    <property name="modified">2019-12-26T11:21:29</property>
+    <property name="modified">2019-12-26T13:13:42</property>
     <property name="originalScheme">GitHub 3</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.1" />
@@ -488,7 +488,7 @@
     </option>
     <option name="PHP_STRING">
       <value>
-        <option name="FOREGROUND" value="56229" />
+        <option name="FOREGROUND" value="a8c19" />
       </value>
     </option>
     <option name="PY.KEYWORD_ARGUMENT">
