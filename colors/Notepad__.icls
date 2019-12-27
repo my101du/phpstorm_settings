@@ -1,9 +1,10 @@
 <scheme name="Notepad++" version="142" parent_scheme="Default">
   <option name="FONT_SCALE" value="1.0" />
-  <option name="LINE_SPACING" value="1.0" />
+  <option name="LINE_SPACING" value="1.1" />
   <option name="EDITOR_FONT_SIZE" value="12" />
-  <option name="EDITOR_FONT_NAME" value="Fira Code Retina" />
+  <option name="EDITOR_FONT_NAME" value="Fira Code" />
   <option name="CONSOLE_FONT_NAME" value="Consolas" />
+  <option name="CONSOLE_LINE_SPACING" value="1.0" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="" />
     <option name="ANNOTATIONS_COLOR" value="" />
@@ -553,7 +554,6 @@
     <option name="PHP_INSTANCE_FIELD">
       <value>
         <option name="FOREGROUND" value="932b2a" />
-        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_KEYWORD">
@@ -561,9 +561,9 @@
         <option name="FOREGROUND" value="ff" />
       </value>
     </option>
-    <option name="PHP_PARAMETER">
+    <option name="PHP_PROTECTED_INSTANCE_FIELD">
       <value>
-        <option name="FOREGROUND" value="660000" />
+        <option name="FOREGROUND" value="932b2a" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -575,12 +575,6 @@
         <option name="FOREGROUND" value="ff0000" />
         <option name="BACKGROUND" value="fdf8e3" />
         <option name="EFFECT_TYPE" value="1" />
-      </value>
-    </option>
-    <option name="PHP_VAR">
-      <value>
-        <option name="FOREGROUND" value="660000" />
-        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_VAR_VAR">
