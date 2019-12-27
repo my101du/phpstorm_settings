@@ -550,9 +550,20 @@
         <option name="FOREGROUND" value="a74a9" />
       </value>
     </option>
+    <option name="PHP_INSTANCE_FIELD">
+      <value>
+        <option name="FOREGROUND" value="932b2a" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="PHP_KEYWORD">
       <value>
         <option name="FOREGROUND" value="ff" />
+      </value>
+    </option>
+    <option name="PHP_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="660000" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -564,6 +575,12 @@
         <option name="FOREGROUND" value="ff0000" />
         <option name="BACKGROUND" value="fdf8e3" />
         <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PHP_VAR">
+      <value>
+        <option name="FOREGROUND" value="660000" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_VAR_VAR">
