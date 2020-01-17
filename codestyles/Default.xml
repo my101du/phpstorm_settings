@@ -1,6 +1,9 @@
 <code_scheme name="Default" version="173">
   <option name="RIGHT_MARGIN" value="150" />
   <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
+  <HTMLCodeStyleSettings>
+    <option name="HTML_ATTRIBUTE_WRAP" value="2" />
+  </HTMLCodeStyleSettings>
   <JSCodeStyleSettings version="0">
     <option name="REFORMAT_C_STYLE_COMMENTS" value="true" />
   </JSCodeStyleSettings>
