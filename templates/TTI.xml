@@ -4,4 +4,12 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="t-form-pl" value="&lt;label for=&quot;ds_$END$_form&quot;&#10;       class=&quot;col-sm-1 control-label &quot;&gt;&lt;?php echo($formTrans_ds_$END$) ?&gt;:&lt;/label&gt;&#10;&lt;div class=&quot;col-sm-2&quot;&gt;&#10;    &lt;input type=&quot;text&quot;&#10;           class=&quot;form-control input-sm&quot;&#10;           plcode=&quot;-10&quot;&#10;           value=&quot;&lt;?php hecho($ds_$END$) ?&gt;&quot;&#10;           fieldname=&quot;ds_NAME&quot;&#10;           id=&quot;ds_$END$_form&quot;&#10;           mask=&quot;PLD&quot;&#10;           model=&quot;&lt;?php echo($this-&gt;encodeModel('MODEL/NAME')); ?&gt;&quot;&#10;           fieldname=&quot;ds_$END$&quot;&#10;           code_field=&quot;cd_$END$&quot;&#10;           relid=&quot;-1&quot;&#10;           relCode=&quot;-1&quot;&#10;           type=&quot;text&quot;&gt;&#10;&lt;/div&gt;" description="Form-picklist" toReformat="false" toShortenFQNames="true">
+    <variable name="formTrans_ds_" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ds_" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
