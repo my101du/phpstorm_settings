@@ -20,6 +20,7 @@
     <mask>*.php</mask>
     <mask>*.sql</mask>
     <mask>,*.sql</mask>
+    <mask>*.php,*.sql,*.js</mask>
     <mask>*.php,*.sql</mask>
   </component>
 </application>
