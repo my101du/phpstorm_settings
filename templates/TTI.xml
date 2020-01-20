@@ -1,0 +1,7 @@
+<templateSet group="TTI">
+  <template name="t-filter" value="$f-&gt;addFilter('filter_', 'Title', array('controller'=&gt;))" description="add filter" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
