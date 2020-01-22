@@ -25,4 +25,244 @@
       <option name="PHP Statement" value="true" />
     </context>
   </template>
+  <template name="t-c-grid-attach" value="$grid-&gt;resetGrid();&#10;$tableinfo = $this-&gt;docrep-&gt;getTableInfo(11, true);&#10;$aattach = $this-&gt;docrep-&gt;retSQLArray(&quot; AND cd_test_request = $code&quot;, $orderby = 'ORDER BY dt_record desc', $tableinfo);&#10;&#10;$grid-&gt;addRecords(json_encode($aattach, JSON_NUMERIC_CHECK));&#10;$grid-&gt;setGridToolbarFunction(&quot;dsFormObject.ToolbarTRAttach&quot;);&#10;$grid-&gt;setGridName('gridAttachTR');&#10;$grid-&gt;setGridDivName('AttachTRDiv');&#10;$gridAttach = $grid-&gt;retGrid();" description="生成 attachment 类型 grid" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-c-grid-comment" value="$grid-&gt;resetGrid();&#10;$grid-&gt;setSingleBarControl(true);&#10;$grid-&gt;addCRUDToolbar(false, true, false, true, false);&#10;$grid-&gt;setToolbarSearch(false);&#10;$grid-&gt;setCRUDController(&quot;tr/test_request_comments&quot;);&#10;$grid-&gt;addToolbarTitle('Comments');&#10;&#10;$grid-&gt;addColumn('ds_comments', 'Comments', '350px', $f-&gt;retTypeTextPL(), array('limit' =&gt; '500'));&#10;$grid-&gt;addColumn('ds_human_resource', 'User', '100px', $f-&gt;retTypeStringAny(), array('limit' =&gt; '', 'readonly'=&gt;true));&#10;//        $grid-&gt;addColumn('ds_project_comments_type', 'Type', '200px', $f-&gt;retTypePickList(), array('model' =&gt; 'tti/project_comments_type_model', 'codeField' =&gt; 'cd_project_comments_type','readonly'=&gt;true));&#10;$grid-&gt;addColumn('ds_project_comments_type', 'Type', '200px', $f-&gt;retTypeStringAny(), array('limit' =&gt; '', 'readonly'=&gt;true));&#10;$grid-&gt;addColumn('dt_record', 'Date', '100px', $f-&gt;retTypeDate(), false);&#10;&#10;$grid-&gt;setColumnRenderFunc(&quot;ds_comments&quot;, 'dsFormObject.renderDisableCommentsPL');&#10;&#10;$commentsData = $this-&gt;tr_comments_model-&gt;retRetrieveGridJson(&quot;WHERE cd_test_request = $code&quot;, &quot;ORDER BY 1 DESC&quot;);&#10;&#10;$grid-&gt;addRecords($commentsData);&#10;$grid-&gt;setGridToolbarFunction(&quot;dsFormObject.toolbarTRComment&quot;);&#10;$grid-&gt;setGridName('gridTRComment');&#10;$grid-&gt;setGridDivName('divTRComment');&#10;$gridTRComment = $grid-&gt;retGrid();" description="生成 comment 类型 grid" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-c-grid-step" value="$grid-&gt;resetGrid();&#10;$grid-&gt;setForceDestroy(true);&#10;$grid-&gt;setSingleBarControl(true);&#10;$grid-&gt;addCRUDToolbar();&#10;$grid-&gt;setToolbarSearch(true);&#10;$grid-&gt;setCRUDController(&quot;tr/test_request_steps&quot;);&#10;$grid-&gt;setGridVar('vStepsGrid');&#10;$grid-&gt;setGridName('stepsGrid');&#10;&#10;$grid-&gt;addColumnKey();&#10;$grid-&gt;addRecords(json_encode($steps, JSON_NUMERIC_CHECK));&#10;$gridSteps = $grid-&gt;retGridVar();" description="生成 steps 类型 Grid" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-c-toolbar" value="$grid-&gt;addCRUDToolbar(false, false, true, false, false);&#10;$grid-&gt;addBreakToolbar();&#10;&#10;$xData = $this-&gt;typemodel-&gt;retRetrieveArray(&quot; WHERE dt_deactivated IS NULL&quot;);&#10;foreach ($xData as $key =&gt; $value ) {&#10;    $grid-&gt;addUserBtnToolbar($value['recid'] , $value['ds_test_type'], '', $value['ds_test_type'], $idToolbar);&#10;}&#10;&#10;// normal toolbar button&#10;$grid-&gt;addUserBtnToolbar('duplicate', 'Duplicate', 'fa fa-copy');&#10;// radio toolbar button&#10;$grid-&gt;addUseRadioToolbar('groupwo', 'Group by Work Order', 'Group by Work Order', true, 1);&#10;&#10;$grid-&gt;setGridVar('vGridToToolbar');&#10;$grid-&gt;setForceDestroy(false);&#10;&#10;$toolbar = $grid-&gt;retGridVar();" description="生成 toolbar 和按钮/组" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-sbsmodal" value="$sbs = '';" description="生成 Side-By-Side 类型的界面" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-m-retArray" value="$userInfo = $this-&gt;humanmodel-&gt;retRetrieveArray(&quot; WHERE cd_human_resource={$this-&gt;session-&gt;userdata('cd_human_resource')} and cd_location_default IS NOT NULL&quot;);&#10;" description="查询模型返回数组" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-m-retEmpty" value="$line = $this-&gt;mainmodel-&gt;retRetrieveEmptyNewArray();&#10;&#10;$recid = $line[0]['recid'];&#10;$line[0]['cd_human_resource_request'] = $this-&gt;session-&gt;userdata('cd_human_resource');" description="查询模型返回 空白 数组" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-m-retJson" value="$records = $this-&gt;mainmodel-&gt;retRetrieveGridJson(&#10;    &quot;WHERE cd_human_resource_request={$uid} OR cd_human_resource_te={$uid}&quot;.&#10;            &quot; OR (EXISTS(select  1 from tr.\&quot;TEST_REQUEST_APPROVAL_STEPS\&quot;  x where x.cd_human_resource_define={$uid} and x&#10;        .cd_test_request = tr.\&quot;TEST_REQUEST\&quot;.cd_test_request)) &quot;.&quot;&#10;        or (EXISTS ( select 1 from tr.\&quot;TEST_REQUEST_WORK_ORDER\&quot; y where y.cd_test_request = tr.\&quot;TEST_REQUEST\&quot;.cd_test_request and y.cd_technician = {$uid}))&quot;, &#10;    &quot; ORDER BY nr_tr_number DESC&quot;&#10;);" description="查询模型返回 Json" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-filter-str" value="$fm-&gt;addSimpleFilterUpper('Test Description', 'filter_20', '&quot;TEST_REQUEST&quot;.ds_test_description');&#10;" description="字符串筛选" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-filter-pl" value="$fm-&gt;addPickListFilter('Build', 'filter_', '$folder/$controller', '&quot;$table&quot;.cd_');$END$&#10;" description="下拉筛选(来自controller)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-filter-rel" value="$fm-&gt;addPickListFilter('Build', 'filter_', '$folder/$controller', '&quot;$table&quot;.cd_');$END$&#10;" description="关联的下拉筛选" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-filter-fix" value="foreach($userInfo as $key =&gt; $value) {&#10;    array_push($arrayLoc, array('recid' =&gt; $value['cd_location_default'], 'description' =&gt;$value['ds_location_default'] ));&#10;}&#10;$fm-&gt;addFilter('filter_location', 'Location', array(&#10;    'controller' =&gt; 'location', &#10;    'fieldname' =&gt; '&quot;TEST_REQUEST&quot;.cd_location', &#10;    'multi' =&gt; false,&#10;    'selectedData' =&gt; $arrayLoc)&#10;);" description="下拉筛选-固定几个选项" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-filter-like" value="$fm-&gt;addFilter('filter_811', 'Project#', array('fieldname' =&gt; &quot;COALESCE(\&quot;TEST_REQUEST\&quot;.ds_met_project, '') || '-' || COALESCE(\&quot;TEST_REQUEST\&quot;.ds_tti_project, '') || '-'&quot;, 'likeIlike' =&gt; 'I', 'startWith' =&gt; false));" description="复杂的关键词筛选" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-col-str" value="$grid-&gt;addColumn('nr_tr_number', 'TR#', '100px', $f-&gt;retTypeStringAny(), false);  // array('limit' =&gt; '40', 'readonly'=&gt;true)&#10;" description="字符串 Column" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-col-text" value="$grid-&gt;addColumn('ds_wi_description', 'WI Description', '100px', $f-&gt;retTypeTextPL(), array('limit' =&gt; ''));&#10;" description="长文本 Column" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-col-int" value="$grid-&gt;addColumn('nr_power_pack_quantity', 'Power Pack', '80px', $f-&gt;retTypeInteger(), false);&#10;" description="整数 Column" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-col-num" value="$grid-&gt;addColumn('nr_goal', 'Goal', '80px', $f-&gt;retTypeNum(), array('precision' =&gt; '2', 'readonly' =&gt; false));&#10;" description="带小数点浮点数 Column" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-col-date" value="$grid-&gt;addColumn('dt_request', 'Request Date', '80px', $f-&gt;retTypeDate(), false);&#10;" description="日期 Column" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-col-checkbox" value="$grid-&gt;addColumn('fl_return_sample', 'Return Sample', '100px', $f-&gt;retTypeCheckBox(), false);&#10;" description="Checkbox复选框 Column" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-col-pl" value="$grid-&gt;addColumn('ds_location', 'Location', '100px', $f-&gt;retTypePickList(), array('model' =&gt; 'location_model', 'codeField' =&gt; 'cd_location'), true);&#10;" description="下拉列表(数据来自模型) Column" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-col-func" value="$grid-&gt;setColumnRenderFunc('ds_test_request_status', 'dsMainObject.setRenderStatus');&#10;" description="定制 Column 样式的函数" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-form-pk" value="&lt;input type=&quot;hidden&quot; &#10;    class=&quot;form-control input-sm&quot; &#10;    fieldname=&quot;cd_shipping&quot;&#10;    id=&quot;cd_shipping_form&quot; &#10;    mask=&quot;PK&quot; &#10;    value=&quot;&lt;?php hecho($cd_shipping); ?&gt;&quot; /&gt;" description="表单元素 PK" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-form-date" value="&lt;label for=&quot;dt_request_form&quot;&#10;   class=&quot;col-sm-1 control-label &quot;&gt;&lt;?php echo($formTrans_dt_request) ?&gt;:&lt;/label&gt;&#10;&lt;div class=&quot;col-sm-2&quot;&gt;&#10;    &lt;input type=&quot;text&quot;&#10;       class=&quot;form-control input-sm&quot;&#10;       fieldname=&quot;dt_request&quot;&#10;       sc=&quot;Y&quot;&#10;       mask=&quot;D;+0D;;&quot;&#10;       ro=&quot;Y&quot;&#10;       value=&quot;&lt;?php hecho($dt_request); ?&gt;&quot;&#10;       id=&quot;dt_request_form&quot;&gt;&#10;&lt;/div&gt;" description="表单元素 日期" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-form-pld" value="&lt;label for=&quot;ds_$END$_form&quot;&#10;       class=&quot;col-sm-1 control-label &quot;&gt;&lt;?php echo($formTrans_ds_$END$) ?&gt;:&lt;/label&gt;&#10;&lt;div class=&quot;col-sm-2&quot;&gt;&#10;    &lt;input type=&quot;text&quot;&#10;           class=&quot;form-control input-sm&quot;&#10;           plcode=&quot;-10&quot;&#10;           value=&quot;&lt;?php hecho($ds_$END$) ?&gt;&quot;&#10;           fieldname=&quot;ds_NAME&quot;&#10;           id=&quot;ds_$END$_form&quot;&#10;           mask=&quot;PLD&quot;&#10;           model=&quot;&lt;?php echo($this-&gt;encodeModel('MODEL/NAME')); ?&gt;&quot;&#10;           fieldname=&quot;ds_$END$&quot;&#10;           code_field=&quot;cd_$END$&quot;&#10;           relid=&quot;-1&quot;&#10;           relCode=&quot;-1&quot;&#10;           type=&quot;text&quot;&gt;&#10;&lt;/div&gt;" description="表单元素 PLD" toReformat="false" toShortenFQNames="true">
+    <variable name="formTrans_ds_" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ds_" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-form-rel" value="&lt;?php&#10;// Team must = &quot;Test Engineers&quot; (Team Group)&#10;$sqlOnlyTE = $this-&gt;cdbhelper-&gt;getFilterQueryId(' AND cd_test_team_groups= ' . $this-&gt;cdbhelper-&gt;getSystemParameters('TEST_TEAM_GROUPS_TEST_ENGINEER'));&#10;&#10;// test engineer in Team.&#10;$sqlInTeam = $this-&gt;cdbhelper-&gt;getFilterQueryId(' AND EXISTS (SELECT 1 FROM &quot;TEST_TEAM_X_HUMAN_RESOURCE&quot; x '&#10;    .'WHERE x.cd_human_resource = &quot;HUMAN_RESOURCE&quot;.cd_human_resource '&#10;    .'AND x.cd_test_team = %s AND x.dt_deactivated IS NULL) ');&#10;?&gt;&#10;&#10;&lt;label for=&quot;ds_test_team_form&quot;&#10;       class=&quot;col-sm-1 control-label after-submit-step&quot;&gt;&lt;?php echo($formTrans_ds_test_team)&#10;    ?&gt;:&lt;/label&gt;&#10;&lt;div class=&quot;col-sm-2 after-submit-step&quot;&gt;&#10;    &lt;input type=&quot;text&quot;&#10;           class=&quot;form-control input-sm&quot;&#10;           plcode=&quot;&lt;?php echo($cd_test_team) ?&gt;&quot;&#10;           value=&quot;&lt;?php hecho($ds_test_team) ?&gt;&quot;&#10;           fieldname=&quot;ds_test_team&quot;&#10;           id=&quot;ds_test_team_form&quot;&#10;           mask=&quot;PLD&quot;&#10;           model=&quot;&lt;?php echo($this-&gt;encodeModel('tr/test_team_model')); ?&gt;&quot;&#10;           code_field=&quot;cd_test_team&quot;&#10;           relid=&quot;&lt;?php echo($sqlOnlyTE) ?&gt;&quot;&#10;           ro=&quot;&lt;?php echo($perm_edit == true ? 'N' : 'Y') ?&gt;&quot;&#10;           relCode=&quot;-1&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;label for=&quot;ds_human_resource_te_form&quot;&#10;       class=&quot;col-sm-1 control-label after-submit-step&quot;&gt;&lt;?php echo($formTrans_cd_human_resource_te) ?&gt;:&lt;/label&gt;&#10;&lt;div class=&quot;col-sm-2 after-submit-step&quot;&gt;&#10;    &lt;input type=&quot;text&quot;&#10;           class=&quot;form-control input-sm&quot;&#10;           plcode=&quot;&lt;?php echo($cd_human_resource_te) ?&gt;&quot;&#10;           value=&quot;&lt;?php hecho($ds_human_resource_te) ?&gt;&quot;&#10;           fieldname=&quot;ds_human_resource_te&quot;&#10;           id=&quot;ds_human_resource_te_form&quot;&#10;           mask=&quot;PLD&quot;&#10;           model=&quot;&lt;?php echo($this-&gt;encodeModel('human_resource_model')); ?&gt;&quot;&#10;           fieldname=&quot;ds_human_resource_te&quot;&#10;           code_field=&quot;cd_human_resource_te&quot;&#10;           relid=&quot;&lt;?php echo($sqlInTeam) ?&gt;&quot;&#10;           ro=&quot;&lt;?php echo($perm_edit == true ? 'N' : 'Y') ?&gt;&quot;&#10;           relCode=&quot;-1&quot;&gt;&#10;&lt;/div&gt;" description="表单元素 关联 PLD" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-form-rel" value="$('#formTRRequest').on('pospicklist', function (ev) {&#10;    // TEST TEAM&#10;    if (ev.fielddata.codefield == 'cd_test_team') {&#10;        // set the &quot;supervisor&quot; in test team, as the responsible_te (the model return supervisor column.)&#10;        // thisObj.Form.setItemPL('ds_human_resource_te_form', -1, '');&#10;        var supervisor = JSON.parse(ev.record.dss_supervisor);&#10;        thisObj.Form.setItemPL(&#10;            'ds_human_resource_te_form',&#10;            supervisor.length &gt; 0 ? supervisor[0].cd_human_resource : -1,&#10;            supervisor.length &gt; 0 ? supervisor[0].ds_human_resource : ''&#10;        );&#10;    }&#10;});&#10;&#10;$('#formTRRequest').on('prepicklist', function (ev) {&#10;    // test engineer must in the selected team&#10;    if (ev.fielddata.codefield == 'cd_human_resource_te') {&#10;        var vcode = chkUndefined(thisObj.Form.getItemPLCode('ds_test_team_form'), -1);&#10;        thisObj.Form.setPLRelCode('ds_human_resource_te_form', vcode);&#10;        ev.options.relation.id = vcode;&#10;    }&#10;});" description="表单元素 关联 PLD js代码" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-form-multi" value="&lt;label for=&quot;ds_requesters_form&quot; class=&quot;col-sm-1 control-label&quot;&gt;&lt;?php echo($formTrans_ds_requesters) ?&gt;:&lt;/label&gt;&#10;&lt;div class=&quot;col-sm-4&quot;&gt;&#10;    &lt;input type=&quot;text&quot; &#10;        class=&quot;form-control input-sm&quot; &#10;        fieldname=&quot;ds_requesters&quot;&#10;        id=&quot;ds_requesters_form&quot; &#10;        mask=&quot;XXX&quot;&#10;        must=&quot;Y&quot;&#10;        model = &quot;&lt;?php echo ($this-&gt;encodeModel('human_resource_model')); ?&gt;&quot; &#10;        code_field=&quot;cd_human_resource&quot;&#10;        relid=&quot;-1&quot; &#10;        relCode=&quot;-1&quot;&#10;        multiple=&quot;Y&quot;&gt;&#10;    &lt;input type=&quot;hidden&quot; &#10;        class=&quot;form-control input-sm&quot; &#10;        fieldname=&quot;ds_requesters_update&quot;&#10;        id=&quot;ds_requesters_update_form&quot; &#10;        mask=&quot;t&quot;  /&gt;&#10;&lt;/div&gt;" description="表单元素 多选(类似 tag 列表)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-setForm" value="thisObj.Form = $('#formTRRequest').cgbForm({updController: 'tr/test_request'});&#10;thisObj.Form.addGridToControl('gridWO');&#10;thisObj.Form.addGridToControl('gridRelatedModels');&#10;thisObj.Form.addGridToControl('gridAttachTR');&#10;thisObj.Form.addGridToControl('gridTRComment');&#10;thisObj.Form.addGridToControl('stepsGrid');&#10;&#10;var vtoolbar = vGridToToolbar.toolbar;&#10;&#10;vtoolbar.onClick = function (a, b) {&#10;    if (a == 'update') {&#10;        thisObj.updateData();&#10;    }&#10;};&#10;vtoolbar.name = 'TRFormToolbar';&#10;&#10;if (w2ui['TRFormToolbar'] != undefined) {&#10;    w2ui['TRFormToolbar'].destroy();&#10;}&#10;&#10;w2ui['gridRelatedModels'].editOnInsert = false;&#10;var vCodeShow = '&lt;?php if ($nr_tr_number != 0) {&#10;    $codehist = &quot;&lt;span title=\&quot;$year\&quot; class=\&quot;yearClass\&quot; data-toggle=\&quot;tooltip\&quot;&gt; &quot; .substr($nr_tr_number, 0, 2).  &quot;&lt;/span&gt;&quot;;&#10;    $codehist .= &quot;&lt;span title=\&quot;$locationcode\&quot; class=\&quot;locationClass\&quot; data-toggle=\&quot;tooltip\&quot; &gt;&quot; .substr($nr_tr_number, 2, 2).  &quot;&lt;/span&gt;&quot;;&#10;    $codehist .= &quot;&lt;span title=\&quot;$sequence\&quot;  class=\&quot;sequenceClass\&quot; data-toggle=\&quot;tooltip\&quot; &gt;&quot; .substr($nr_tr_number, 4, 5).  &quot;&lt;/span&gt;&quot;;&#10;&#10;    echo($codehist);&#10;} else {&#10;    echo('NEW');&#10;};   ?&gt;';&#10;&#10;vtoolbar.items.push({type: 'html', id: 'itemTitle', html: '&lt;div class=&quot;toolbarTitle&quot;&gt;' + vCodeShow + '&lt;/div&gt;'});&#10;$('#trToolbar').w2toolbar(vtoolbar);&#10;&#10;&#10;// init the step controller&#10;thisObj.stepControl = $('#stepsArea').cgbApproveControl({&#10;    funcAction: this.updateStatus,&#10;    stepGridName: 'stepsGrid',&#10;    startNew: (thisObj.action == 'I'),&#10;    fkColumn: 'cd_test_request',&#10;    master: false,&#10;    stepType: 'TR',&#10;    code: thisObj.Form.getPk()&#10;});&#10;&#10;function onGridToolbarPressed(bPressed, dData) {&#10;    dsMainObject.ToolBarClick(bPressed, dData);&#10;}" description="设置表单页面类型的 Form/Grid/toolbar 等" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-setTabs" value="$('#tab_browse_div').append($('#container-tr-browse').detach());&#10;&lt;?php echo($javascript); ?&gt;&#10;&#10;$('#mainTabsDiv').ctabStart({&#10;    afterChanged: thisObj.tabAfterChanged,&#10;    beforeChange: thisObj.tabBeforeChanged&#10;});&#10;//-----------------------------------------------------------------------&#10;//this.addListeners();&#10;&#10;this.tabBeforeChanged = function (id) {&#10;    if ((id == 'tab_detail') || (id == 'tab_sample')) {&#10;&#10;        var curTab = $('#mainTabsDiv').ctabGetSelected();&#10;        if(curTab == 'tab_browse') {&#10;            if (w2ui[thisObj.gridName].getSelection().length == 0) {&#10;                return false;&#10;            }&#10;        } else if(curTab == 'tab_my') {&#10;            if (w2ui['gridMyTR'].getSelection().length == 0) {&#10;                return false;&#10;            }&#10;        }&#10;    }&#10;    // it is important&#10;    return true;&#10;}&#10;&#10;this.tabAfterChanged = function (id, oldid) {&#10;    // cleanup&#10;    if (oldid == 'tab_sample') {&#10;        if (typeof dsSMPSheetObject != 'undefined') {&#10;            dsSMPSheetObject.close();&#10;            dsSMPSheetObject = undefined;&#10;            $('#tab_sample_div').empty();&#10;        }&#10;    }&#10;&#10;    if (id == 'tab_detail') {&#10;        var rrec = w2ui[thisObj.gridName].getSelection()[0];&#10;        thisObj.loadDetails(rrec);&#10;    }&#10;&#10;    if (id == 'tab_my') {&#10;        // dsMyTRObject has been loaded. change the label&#10;        if(w2ui['gridMyTR'] != undefined) {&#10;            var rrec = w2ui['gridMyTR'].getSelection();&#10;            if (rrec.length &gt; 0) {&#10;                var vdata = w2ui['gridMyTR'].getItem(rrec[0], 'nr_tr_number')&#10;                thisObj.setTabLabel(vdata);&#10;            } else {&#10;                thisObj.setTabLabel('');&#10;            }&#10;        }&#10;&#10;        thisObj.loadMyTR();&#10;    }&#10;    setGrpGridHeight();&#10;}" description="设置 tabs 类型页面(布局/点击事件)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-loadDetail" value="$('#tab_browse_div').append($('#container-tr-browse').detach());&#10;&lt;?php echo($javascript); ?&gt;&#10;&#10;$('#mainTabsDiv').ctabStart({&#10;    afterChanged: thisObj.tabAfterChanged,&#10;    beforeChange: thisObj.tabBeforeChanged&#10;});&#10;//-----------------------------------------------------------------------&#10;//this.addListeners();&#10;&#10;this.tabBeforeChanged = function (id) {&#10;    if ((id == 'tab_detail') || (id == 'tab_sample')) {&#10;&#10;        var curTab = $('#mainTabsDiv').ctabGetSelected();&#10;        if(curTab == 'tab_browse') {&#10;            if (w2ui[thisObj.gridName].getSelection().length == 0) {&#10;                return false;&#10;            }&#10;        } else if(curTab == 'tab_my') {&#10;            if (w2ui['gridMyTR'].getSelection().length == 0) {&#10;                return false;&#10;            }&#10;        }&#10;    }&#10;    // it is important&#10;    return true;&#10;}&#10;&#10;this.tabAfterChanged = function (id, oldid) {&#10;    // cleanup&#10;    if (oldid == 'tab_sample') {&#10;        if (typeof dsSMPSheetObject != 'undefined') {&#10;            dsSMPSheetObject.close();&#10;            dsSMPSheetObject = undefined;&#10;            $('#tab_sample_div').empty();&#10;        }&#10;    }&#10;&#10;    if (id == 'tab_detail') {&#10;        var rrec = w2ui[thisObj.gridName].getSelection()[0];&#10;        thisObj.loadDetails(rrec);&#10;    }&#10;&#10;    if (id == 'tab_my') {&#10;        // dsMyTRObject has been loaded. change the label&#10;        if(w2ui['gridMyTR'] != undefined) {&#10;            var rrec = w2ui['gridMyTR'].getSelection();&#10;            if (rrec.length &gt; 0) {&#10;                var vdata = w2ui['gridMyTR'].getItem(rrec[0], 'nr_tr_number')&#10;                thisObj.setTabLabel(vdata);&#10;            } else {&#10;                thisObj.setTabLabel('');&#10;            }&#10;        }&#10;&#10;        thisObj.loadMyTR();&#10;    }&#10;    setGrpGridHeight();&#10;}" description="加载详情页" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-grid-help" value="var recid = w2ui[thisObj.gridName].getPk();&#10;if (w2ui[thisObj.gridName].isNewRow(vcode)) {}" description="与 grid 有关的 js 方法速查" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-toolbar" value="if (bPressed == 'insert') {&#10;    w2ui[thisObj.gridName].insertRow({&#10;        funcAfter: function (e) {&#10;        }&#10;    });&#10;}&#10;&#10;if (bPressed == &quot;edit&quot;) {&#10;    var sel = w2ui[thisObj.gridName].getSelection();&#10;    if (sel.length == 0) {&#10;        messageBoxError('&lt;?php echo($errorNotSel) ?&gt;');&#10;        return;&#10;    }&#10;    thisObj.openEdit(sel[0], dData);&#10;}&#10;&#10;if (bPressed == 'retrieve') {&#10;    w2ui[thisObj.gridName].retrieve();&#10;}&#10;&#10;if (bPressed == &quot;update&quot;) {&#10;    w2ui['gridDocRepData'].update({updFunc: 'updateGridGeneral/' + thisObj.docid + '/' + thisObj.cd_pk});&#10;    setTimeout(function () {&#10;        if (typeof dsWOMainObject != 'undefined') {&#10;            dsWOMainObject.retrWO(1);&#10;            dsWOMainObject.retrWO(2);&#10;        }&#10;    }, 0);&#10;}&#10;&#10;if (bPressed == &quot;delete&quot;) {&#10;    w2ui[thisObj.gridName].deleteRow({&#10;        funcAfter: function () {&#10;            thisObj.makeEvent()&#10;        }&#10;    });&#10;}" description="设置 toolbar 通用 crud 事件" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-grid-search" value="w2ui[thisObj.gridName].on('search', function(event) {&#10;    $('#container-tr-browse .btn-group button').removeClass('active');&#10;    $('#container-tr-browse .btn-group button:first').addClass('active');&#10;});" description="设置 grid 的 search 事件" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-grid-dblclick" value="w2ui[thisObj.gridName].on('dblClick', function (event) {&#10;    var col = event.column;&#10;    var colname = w2ui['gridShippingCost'].columns[col].field;&#10;    var vid = chkUndefined(w2ui['gridShippingCost'].getItem(event.recid, 'cd_currency_rate'), -1);&#10;&#10;    if (colname == 'nr_currency_rate') {&#10;        event.preventDefault();&#10;        // do something&#10;    }&#10;&#10;    // default&#10;    $('#tab_detail a').click();&#10;});" description="设置 grid 的 DoubleClick 双击事件" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-grid-rowFocusChanging" value="w2ui[thisObj.gridName].on('rowFocusChanging', function (event) {&#10;        if (event.recid_new &lt;= 0) return;&#10;        thisObj.selectSample = event.recid_new;&#10;        var vdata = chkUndefined(w2ui[thisObj.gridName].getItem(event.recid_new, 'ds_serial_number'), '');&#10;        thisObj.setTabLabel($('#fortab2 button[name=&quot;samdetail&quot;]'), thisObj.smpDetailText, vdata);&#10;    }&#10;);" description="设置 grid 的行之间切换事件 row focus change" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-grid-retrieveOnAdd" value="w2ui[thisObj.gridName].on ('retrieveOnAdd', function(e){&#10;    e.onComplete = function(){&#10;        &lt;?php if ($openDetail == 'Y') { ?&gt;&#10;        setTimeout(function () {&#10;            $('#tab_detail a').click();&#10;        }, 0);&#10;        w2ui[thisObj.gridName].off('retrieveOnAdd');&#10;        &lt;?php } ?&gt;&#10;&#10;        thisObj.setFilterTab(e.data.resultset, '#container-tr-browse', 'ds_test_request_status');&#10;    }&#10;});" description="设置 grid 取回数据后的事件 retrieveOnAdd" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
 </templateSet>
