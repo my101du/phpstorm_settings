@@ -1,0 +1,8 @@
+<templateSet group="user">
+  <template name="t-c-tabs" value="$ctabs-&gt;addTab('All TR', 'tab_browse');&#10;$ctabs-&gt;addTab('My TR', 'tab_my');&#10;$ctabs-&gt;addTab('Details', 'tab_detail');&#10;$ctabs-&gt;addTab('Samples', 'tab_sample');&#10;$ctabs-&gt;setMainDivId('mainTabsDiv');&#10;$ctabs-&gt;setContentDivId('tab_browse_div');" description="创建 tabs" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+</templateSet>
