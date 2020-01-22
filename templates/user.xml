@@ -225,7 +225,7 @@
       <option name="PHP Statement" value="true" />
     </context>
   </template>
-  <template name="t-js-toolbar" value="if (bPressed == 'insert') {&#10;    w2ui[thisObj.gridName].insertRow({&#10;        funcAfter: function (e) {&#10;        }&#10;    });&#10;}&#10;&#10;if (bPressed == &quot;edit&quot;) {&#10;    var sel = w2ui[thisObj.gridName].getSelection();&#10;    if (sel.length == 0) {&#10;        messageBoxError('&lt;?php echo($errorNotSel) ?&gt;');&#10;        return;&#10;    }&#10;    thisObj.openEdit(sel[0], dData);&#10;}&#10;&#10;if (bPressed == 'retrieve') {&#10;    w2ui[thisObj.gridName].retrieve();&#10;}&#10;&#10;if (bPressed == &quot;update&quot;) {&#10;    w2ui['gridDocRepData'].update({updFunc: 'updateGridGeneral/' + thisObj.docid + '/' + thisObj.cd_pk});&#10;    setTimeout(function () {&#10;        if (typeof dsWOMainObject != 'undefined') {&#10;            dsWOMainObject.retrWO(1);&#10;            dsWOMainObject.retrWO(2);&#10;        }&#10;    }, 0);&#10;}&#10;&#10;if (bPressed == &quot;delete&quot;) {&#10;    w2ui[thisObj.gridName].deleteRow({&#10;        funcAfter: function () {&#10;            thisObj.makeEvent()&#10;        }&#10;    });&#10;}" description="设置 toolbar 通用 crud 事件" toReformat="false" toShortenFQNames="true">
+  <template name="t-js-toolbar" value="this.ToolBarClick = function(bPressed, bInfo) {&#10;    if (bPressed == 'insert') {&#10;        w2ui[thisObj.gridName].insertRow({&#10;            funcAfter: function (e) {&#10;            }&#10;        });&#10;    }&#10;    &#10;    if (bPressed == &quot;edit&quot;) {&#10;        var sel = w2ui[thisObj.gridName].getSelection();&#10;        if (sel.length == 0) {&#10;            messageBoxError('&lt;?php echo($errorNotSel) ?&gt;');&#10;            return;&#10;        }&#10;        thisObj.openEdit(sel[0], dData);&#10;    }&#10;    &#10;    if (bPressed == 'retrieve') {&#10;        w2ui[thisObj.gridName].retrieve();&#10;    }&#10;    &#10;    if (bPressed == &quot;update&quot;) {&#10;        w2ui['gridDocRepData'].update({updFunc: 'updateGridGeneral/' + thisObj.docid + '/' + thisObj.cd_pk});&#10;        setTimeout(function () {&#10;            if (typeof dsWOMainObject != 'undefined') {&#10;                dsWOMainObject.retrWO(1);&#10;                dsWOMainObject.retrWO(2);&#10;            }&#10;        }, 0);&#10;    }&#10;    &#10;    if (bPressed == &quot;delete&quot;) {&#10;        w2ui[thisObj.gridName].deleteRow({&#10;            funcAfter: function () {&#10;                thisObj.makeEvent()&#10;            }&#10;        });&#10;    }&#10;}&#10;&#10;makeFilterWithEnter(function () {&#10;    dsMainObject.ToolBarClick('retrieve');&#10;});" description="设置 toolbar 通用 crud 事件" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
       <option name="JAVA_SCRIPT" value="true" />
@@ -258,6 +258,22 @@
     </context>
   </template>
   <template name="t-js-grid-retrieveOnAdd" value="w2ui[thisObj.gridName].on ('retrieveOnAdd', function(e){&#10;    e.onComplete = function(){&#10;        &lt;?php if ($openDetail == 'Y') { ?&gt;&#10;        setTimeout(function () {&#10;            $('#tab_detail a').click();&#10;        }, 0);&#10;        w2ui[thisObj.gridName].off('retrieveOnAdd');&#10;        &lt;?php } ?&gt;&#10;&#10;        thisObj.setFilterTab(e.data.resultset, '#container-tr-browse', 'ds_test_request_status');&#10;    }&#10;});" description="设置 grid 取回数据后的事件 retrieveOnAdd" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-close" value="this.beforeClose = function () {&#10;    return w2ui[thisObj.gridName].getChanges().length == 0;&#10;}&#10;&#10;this.close = function () {&#10;    w2ui[thisObj.gridName].destroy();&#10;&#10;    if (typeof dsFormObject != 'undefined') {&#10;        dsFormObject.close();&#10;        dsFormObject = undefined;&#10;&#10;        $('#tab_detail_div').empty();&#10;    }&#10;&#10;    introRemove();&#10;    return true;&#10;}" description="关闭对象与检查" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="t-js-resize" value="function setGrpGridHeight() {&#10;    var hAvail = getWorkArea();&#10;    // $(&quot;#tab_browse_div&quot;).css(&quot;height&quot;, hAvail - 40);&#10;    $(&quot;#browse_grid_div&quot;).css(&quot;height&quot;, hAvail - 75); // has a &quot;button group&quot;, so need minus more pixels.&#10;&#10;    w2ui[gridName].resize();&#10;&#10;    // call other object's resize.&#10;    if (typeof dsFormObject != 'undefined') {&#10;        dsFormObject.resize();&#10;    }&#10;}&#10;&#10;// funcao chamada quando o filtro some. tem que existir se existir filtro!&#10;function onFilterHidden() {&#10;    setGrpGridHeight();&#10;}&#10;&#10;$(window).on('resize.mainResize', function () {&#10;    setGrpGridHeight();&#10;});&#10;$(&quot;body&quot;).on('togglePushMenu toggleFilter', function () {&#10;    setGrpGridHeight();&#10;});&#10;&#10;setGrpGridHeight();" description="界面高度自动调整与适应" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
       <option name="JAVA_SCRIPT" value="true" />
