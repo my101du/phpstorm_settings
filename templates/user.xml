@@ -385,8 +385,8 @@
   </template>
   <template name="t-js-form-setEnable" value="thisObj.Form.setEnabled('dt_completed_date_form', (vSequence !== ''));" description="Javascript - Form - set a field Enable" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="ES6_STATEMENT" value="true" />
-      <option name="JS_STATEMENT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
     </context>
   </template>
   <template name="t-js-form-setDemaned" value="thisObj.Form.setDemanded('ds_project_form', isProjectRequired);" description="Javascript - Form - set a field is Required" toReformat="true" toShortenFQNames="true">
