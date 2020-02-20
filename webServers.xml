@@ -9,6 +9,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="2f3ce124-1dac-47a2-ab5d-bd37000970cd" name="tti-laptop" url="http://192.168.3.194">
+        <fileTransfer host="192.168.3.194" port="2222" rootFolder="/var/www/QASystems" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="2222" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
