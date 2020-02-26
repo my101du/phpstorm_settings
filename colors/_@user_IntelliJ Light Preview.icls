@@ -3,7 +3,7 @@
     <property name="created">2020-02-16T15:59:04</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.3.2.0.0</property>
-    <property name="modified">2020-02-26T10:16:50</property>
+    <property name="modified">2020-02-26T10:56:29</property>
     <property name="originalScheme">IntelliJ Light Preview</property>
   </metaInfo>
   <colors>
@@ -246,6 +246,9 @@
         <option name="FOREGROUND" value="336ecc" />
       </value>
     </option>
+    <option name="HTML_CODE">
+      <value />
+    </option>
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="6dcc" />
@@ -305,6 +308,14 @@
         <option name="FOREGROUND" value="264eff" />
       </value>
     </option>
+    <option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="KOTLIN_LABEL">
+      <value />
+    </option>
     <option name="LIVE_TEMPLATE_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="e63900" />
@@ -313,6 +324,12 @@
     <option name="List/map to object conversion">
       <value>
         <option name="FOREGROUND" value="ff" />
+      </value>
+    </option>
+    <option name="MATCHED_BRACE_ATTRIBUTES">
+      <value>
+        <option name="BACKGROUND" value="99ccbb" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PROPERTIES.KEY">
