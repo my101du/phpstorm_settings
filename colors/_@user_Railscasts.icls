@@ -3,7 +3,7 @@
     <property name="created">2020-02-16T15:59:04</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.3.2.0.0</property>
-    <property name="modified">2020-03-02T20:09:58</property>
+    <property name="modified">2020-03-03T17:12:17</property>
     <property name="originalScheme">Railscasts</property>
   </metaInfo>
   <colors>
@@ -767,6 +767,9 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
+    <option name="HTML_CODE">
+      <value />
+    </option>
     <option name="HTML_COMMENT">
       <value>
         <option name="FOREGROUND" value="bc9458" />
@@ -934,6 +937,14 @@
         <option name="FOREGROUND" value="a5c261" />
       </value>
     </option>
+    <option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="KOTLIN_LABEL">
+      <value />
+    </option>
     <option name="LABEL">
       <value>
         <option name="FOREGROUND" value="cc7833" />
@@ -956,7 +967,8 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="3a6da0" />
+        <option name="BACKGROUND" value="99ccbb" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="NOT_USED_ELEMENT_ATTRIBUTES">
