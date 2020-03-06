@@ -15,4 +15,5 @@
   <action id="PreviousTemplateVariable" />
   <action id="QuickChangeScheme" />
   <action id="SearchEverywhere.PrevTab" />
+  <action id="Terminal.SwitchFocusToEditor" />
 </keymap>
