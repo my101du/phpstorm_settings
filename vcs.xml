@@ -6,6 +6,10 @@
           <option name="url" value="http://10.64.20.131:7990" />
           <option name="userName" value="Eric.Zhang3" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://bitbucket.org" />
+          <option name="userName" value="ericzhangzhiyan" />
+        </UrlAndUserName>
       </list>
     </option>
   </component>
