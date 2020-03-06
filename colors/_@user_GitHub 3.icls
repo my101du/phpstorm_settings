@@ -4,7 +4,7 @@
     <property name="created">2019-12-20T11:00:24</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.3.0.0</property>
-    <property name="modified">2020-03-03T19:17:16</property>
+    <property name="modified">2020-03-06T19:49:40</property>
     <property name="originalScheme">GitHub 3</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.1" />
@@ -114,7 +114,7 @@
         <option name="FOREGROUND" value="5cc5" />
       </value>
     </option>
-    <option name="CUSTOM_MULTI_LINE_COMMENT_ATTRIBUTES" baseAttributes="DEFAULT_BLOCK_COMMENT" />
+    <option name="CUSTOM_MULTI_LINE_COMMENT_ATTRIBUTES" baseAttributes="" />
     <option name="DEFAULT_ATTRIBUTE">
       <value>
         <option name="FOREGROUND" value="6f42c1" />
