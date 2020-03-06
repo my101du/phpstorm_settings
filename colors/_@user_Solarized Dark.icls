@@ -3,7 +3,7 @@
     <property name="created">2020-02-16T15:59:04</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.3.2.0.0</property>
-    <property name="modified">2020-03-06T19:49:40</property>
+    <property name="modified">2020-03-04T08:59:07</property>
     <property name="originalScheme">Solarized Dark</property>
   </metaInfo>
   <colors>
@@ -1115,6 +1115,9 @@
         <option name="FOREGROUND" value="2aa198" />
       </value>
     </option>
+    <option name="HTML_CODE">
+      <value />
+    </option>
     <option name="HTML_COMMENT">
       <value>
         <option name="FOREGROUND" value="586e75" />
@@ -1282,6 +1285,14 @@
         <option name="FOREGROUND" value="6c71c4" />
         <option name="FONT_TYPE" value="1" />
       </value>
+    </option>
+    <option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="KOTLIN_LABEL">
+      <value />
     </option>
     <option name="LABEL">
       <value>
@@ -1554,8 +1565,8 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="2b36" />
-        <option name="BACKGROUND" value="859900" />
+        <option name="BACKGROUND" value="99ccbb" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MESSAGE_ARGUMENT">

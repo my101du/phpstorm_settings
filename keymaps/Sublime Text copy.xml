@@ -1,6 +1,6 @@
 <keymap version="1" name="Sublime Text copy" parent="Sublime Text">
   <action id="ActivateTerminalToolWindow">
-    <keyboard-shortcut first-keystroke="shift alt i" />
+    <keyboard-shortcut first-keystroke="ctrl back_quote" />
   </action>
   <action id="AddToFavoritesPopup" />
   <action id="CodeInspection.OnEditor" />
@@ -13,5 +13,6 @@
   <action id="PrevParameter" />
   <action id="PrevTemplateParameter" />
   <action id="PreviousTemplateVariable" />
+  <action id="QuickChangeScheme" />
   <action id="SearchEverywhere.PrevTab" />
 </keymap>

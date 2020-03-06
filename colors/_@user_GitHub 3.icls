@@ -4,13 +4,14 @@
     <property name="created">2019-12-20T11:00:24</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.3.0.0</property>
-    <property name="modified">2020-03-06T19:49:40</property>
+    <property name="modified">2020-03-06T10:10:15</property>
     <property name="originalScheme">GitHub 3</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.1" />
-  <option name="EDITOR_FONT_SIZE" value="12" />
-  <option name="EDITOR_FONT_NAME" value="Menlo" />
-  <option name="CONSOLE_FONT_NAME" value="Menlo" />
+  <option name="EDITOR_FONT_SIZE" value="13" />
+  <option name="EDITOR_FONT_NAME" value="Consolas" />
+  <option name="CONSOLE_FONT_NAME" value="Consolas" />
+  <option name="CONSOLE_FONT_SIZE" value="12" />
   <colors>
     <option name="CARET_ROW_COLOR" value="fffbdd" />
     <option name="GUTTER_BACKGROUND" value="ffffff" />
@@ -114,7 +115,7 @@
         <option name="FOREGROUND" value="5cc5" />
       </value>
     </option>
-    <option name="CUSTOM_MULTI_LINE_COMMENT_ATTRIBUTES" baseAttributes="" />
+    <option name="CUSTOM_MULTI_LINE_COMMENT_ATTRIBUTES" baseAttributes="DEFAULT_BLOCK_COMMENT" />
     <option name="DEFAULT_ATTRIBUTE">
       <value>
         <option name="FOREGROUND" value="6f42c1" />
@@ -511,11 +512,6 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="PHP_STRING">
-      <value>
-        <option name="FOREGROUND" value="a8c19" />
-      </value>
-    </option>
     <option name="PY.KEYWORD_ARGUMENT">
       <value>
         <option name="FOREGROUND" value="e36209" />
@@ -565,6 +561,9 @@
       <value>
         <option name="FOREGROUND" value="0" />
       </value>
+    </option>
+    <option name="TEXT">
+      <value />
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
       <value>
