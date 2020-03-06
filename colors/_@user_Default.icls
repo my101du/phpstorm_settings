@@ -3,7 +3,7 @@
     <property name="created">2019-12-04T08:28:00</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2020-03-06T09:48:06</property>
+    <property name="modified">2020-03-06T10:12:01</property>
     <property name="originalScheme">Default</property>
   </metaInfo>
   <colors>
@@ -27,7 +27,52 @@
     <option name="FILESTATUS_modifiedOutside" value="5cc5" />
   </colors>
   <attributes>
+    <option name="PHP_INSTANCE_METHOD">
+      <value>
+        <option name="FOREGROUND" value="932b2a" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PHP_KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="ce1f27" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PHP_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="358cb" />
+      </value>
+    </option>
+    <option name="PHP_PRIVATE_INSTANCE_METHOD">
+      <value>
+        <option name="FOREGROUND" value="932b2a" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PHP_PROTECTED_INSTANCE_METHOD">
+      <value>
+        <option name="FOREGROUND" value="932b2a" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="PHP_SCRIPTING_BACKGROUND">
+      <value>
+        <option name="BACKGROUND" value="ffffff" />
+      </value>
+    </option>
+    <option name="PHP_STRING">
+      <value>
+        <option name="FOREGROUND" value="8000" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PHP_VAR">
+      <value>
+        <option name="FOREGROUND" value="358cb" />
+      </value>
+    </option>
+    <option name="TEXT">
       <value />
     </option>
   </attributes>
