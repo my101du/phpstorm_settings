@@ -4,7 +4,7 @@
     <property name="created">2019-12-20T11:00:24</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.3.0.0</property>
-    <property name="modified">2020-03-12T15:14:53</property>
+    <property name="modified">2020-03-16T09:15:21</property>
     <property name="originalScheme">GitHub 3</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.1" />
@@ -561,9 +561,6 @@
       <value>
         <option name="FOREGROUND" value="0" />
       </value>
-    </option>
-    <option name="TEXT">
-      <value />
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
       <value>
