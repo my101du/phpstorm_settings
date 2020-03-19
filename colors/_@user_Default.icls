@@ -3,7 +3,7 @@
     <property name="created">2019-12-04T08:28:00</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2020-03-19T15:02:27</property>
+    <property name="modified">2020-03-19T15:22:54</property>
     <property name="originalScheme">Default</property>
   </metaInfo>
   <colors>
@@ -116,7 +116,7 @@
     </option>
     <option name="JS.STRING">
       <value>
-        <option name="FOREGROUND" value="56229" />
+        <option name="FOREGROUND" value="1f8c4b" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -212,7 +212,7 @@
     </option>
     <option name="PHP_STRING">
       <value>
-        <option name="FOREGROUND" value="56229" />
+        <option name="FOREGROUND" value="1f8c4b" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
