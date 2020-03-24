@@ -3,7 +3,7 @@
     <property name="created">2019-12-04T08:28:00</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2020-03-24T17:18:50</property>
+    <property name="modified">2020-03-24T17:24:15</property>
     <property name="originalScheme">Default</property>
   </metaInfo>
   <colors>
@@ -126,12 +126,6 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="PHP_DOC_COMMENT_ID">
-      <value>
-        <option name="FOREGROUND" value="1f8c4b" />
-        <option name="FONT_TYPE" value="2" />
-      </value>
-    </option>
     <option name="PHP_DOC_TAG">
       <value>
         <option name="EFFECT_COLOR" value="808080" />
@@ -152,6 +146,7 @@
     <option name="PHP_INSTANCE_METHOD">
       <value>
         <option name="FOREGROUND" value="932b2a" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_KEYWORD">
@@ -164,6 +159,7 @@
     <option name="PHP_PRIVATE_INSTANCE_METHOD">
       <value>
         <option name="FOREGROUND" value="932b2a" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_PROTECTED_INSTANCE_FIELD">
@@ -174,6 +170,7 @@
     <option name="PHP_PROTECTED_INSTANCE_METHOD">
       <value>
         <option name="FOREGROUND" value="932b2a" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_SCRIPTING_BACKGROUND">
