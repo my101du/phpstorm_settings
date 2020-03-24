@@ -3,7 +3,7 @@
     <property name="created">2019-12-04T08:28:00</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2020-03-24T13:31:04</property>
+    <property name="modified">2020-03-24T14:41:37</property>
     <property name="originalScheme">Default</property>
   </metaInfo>
   <colors>
@@ -91,7 +91,7 @@
     </option>
     <option name="JS.INSTANCE_MEMBER_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="358cb" />
+        <option name="FOREGROUND" value="932b2a" />
       </value>
     </option>
     <option name="JS.INSTANCE_MEMBER_VARIABLE">
@@ -107,7 +107,8 @@
     </option>
     <option name="JS.LOCAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="333333" />
+        <option name="FOREGROUND" value="358cb" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="JS.PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
@@ -144,7 +145,7 @@
     </option>
     <option name="PHP_INSTANCE_METHOD">
       <value>
-        <option name="FOREGROUND" value="358cb" />
+        <option name="FOREGROUND" value="932b2a" />
       </value>
     </option>
     <option name="PHP_KEYWORD">
@@ -154,11 +155,13 @@
       </value>
     </option>
     <option name="PHP_PARAMETER">
-      <value />
+      <value>
+        <option name="FOREGROUND" value="358cb" />
+      </value>
     </option>
     <option name="PHP_PRIVATE_INSTANCE_METHOD">
       <value>
-        <option name="FOREGROUND" value="358cb" />
+        <option name="FOREGROUND" value="932b2a" />
       </value>
     </option>
     <option name="PHP_PROTECTED_INSTANCE_FIELD">
@@ -168,7 +171,7 @@
     </option>
     <option name="PHP_PROTECTED_INSTANCE_METHOD">
       <value>
-        <option name="FOREGROUND" value="358cb" />
+        <option name="FOREGROUND" value="932b2a" />
       </value>
     </option>
     <option name="PHP_SCRIPTING_BACKGROUND">
@@ -181,7 +184,8 @@
     </option>
     <option name="PHP_VAR">
       <value>
-        <option name="FOREGROUND" value="0" />
+        <option name="FOREGROUND" value="358cb" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="TEXT">
