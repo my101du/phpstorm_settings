@@ -3,7 +3,7 @@
     <property name="created">2019-12-04T08:28:00</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2020-03-25T16:37:43</property>
+    <property name="modified">2020-03-26T11:35:55</property>
     <property name="originalScheme">Default</property>
   </metaInfo>
   <colors>
@@ -63,14 +63,6 @@
         <option name="BACKGROUND" value="d9bcbc" />
       </value>
     </option>
-    <option name="INFO_ATTRIBUTES">
-      <value>
-        <option name="BACKGROUND" value="efefef" />
-        <option name="EFFECT_COLOR" value="cccccc" />
-        <option name="ERROR_STRIPE_COLOR" value="d9cfad" />
-        <option name="EFFECT_TYPE" value="2" />
-      </value>
-    </option>
     <option name="INJECTED_LANGUAGE_FRAGMENT">
       <value>
         <option name="EFFECT_COLOR" value="1f8c4b" />
@@ -110,13 +102,11 @@
     <option name="JS.KEYWORD">
       <value>
         <option name="FOREGROUND" value="ce1f27" />
-        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="JS.LOCAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="358cb" />
-        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="JS.PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
@@ -208,10 +198,9 @@
     </option>
     <option name="WARNING_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="ebc700" />
         <option name="EFFECT_COLOR" value="ebc700" />
         <option name="ERROR_STRIPE_COLOR" value="ebc700" />
-        <option name="EFFECT_TYPE" value="1" />
+        <option name="EFFECT_TYPE" value="4" />
       </value>
     </option>
   </attributes>
