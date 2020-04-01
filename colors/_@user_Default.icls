@@ -3,7 +3,7 @@
     <property name="created">2019-12-04T08:28:00</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2020-04-01T08:42:47</property>
+    <property name="modified">2020-04-01T10:33:49</property>
     <property name="originalScheme">Default</property>
   </metaInfo>
   <colors>
@@ -27,11 +27,6 @@
     <option name="FILESTATUS_modifiedOutside" value="5cc5" />
   </colors>
   <attributes>
-    <option name="HTML_ATTRIBUTE_VALUE">
-      <value>
-        <option name="FOREGROUND" value="932b2a" />
-      </value>
-    </option>
     <option name="HTML_CODE">
       <value />
     </option>
@@ -81,18 +76,6 @@
         <option name="BACKGROUND" value="cccccc" />
       </value>
     </option>
-    <option name="JS.BLOCK_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="1f8c4b" />
-        <option name="FONT_TYPE" value="2" />
-      </value>
-    </option>
-    <option name="JS.DOC_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="1f8c4b" />
-        <option name="FONT_TYPE" value="2" />
-      </value>
-    </option>
     <option name="JS.GLOBAL_FUNCTION">
       <value />
     </option>
@@ -116,23 +99,12 @@
         <option name="FOREGROUND" value="ce1f27" />
       </value>
     </option>
-    <option name="JS.LINE_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="1f8c4b" />
-        <option name="FONT_TYPE" value="2" />
-      </value>
-    </option>
     <option name="JS.LOCAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="358cb" />
       </value>
     </option>
     <option name="JS.PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
-    <option name="JS.STRING">
-      <value>
-        <option name="FOREGROUND" value="932b2a" />
-      </value>
-    </option>
     <option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
       <value>
         <option name="FONT_TYPE" value="1" />
@@ -209,11 +181,6 @@
     <option name="PHP_STATIC_METHOD">
       <value>
         <option name="FONT_TYPE" value="3" />
-      </value>
-    </option>
-    <option name="PHP_STRING">
-      <value>
-        <option name="FOREGROUND" value="932b2a" />
       </value>
     </option>
     <option name="PHP_THIS_VAR">
