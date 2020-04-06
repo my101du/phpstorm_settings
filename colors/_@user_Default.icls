@@ -3,7 +3,7 @@
     <property name="created">2019-12-04T08:28:00</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2020-04-06T11:35:20</property>
+    <property name="modified">2020-04-06T11:45:24</property>
     <property name="originalScheme">Default</property>
   </metaInfo>
   <colors>
@@ -137,6 +137,11 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
+    <option name="PHP_BRACES">
+      <value>
+        <option name="FOREGROUND" value="44b6cb" />
+      </value>
+    </option>
     <option name="PHP_DOC_TAG">
       <value>
         <option name="EFFECT_COLOR" value="808080" />
@@ -161,7 +166,8 @@
     </option>
     <option name="PHP_INSTANCE_METHOD">
       <value>
-        <option name="FOREGROUND" value="358cb" />
+        <option name="FOREGROUND" value="0" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_KEYWORD">
@@ -169,14 +175,16 @@
         <option name="FOREGROUND" value="ce1f27" />
       </value>
     </option>
-    <option name="PHP_PARAMETER">
+    <option name="PHP_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="PHP_PARENTHESES">
       <value>
-        <option name="FOREGROUND" value="932b2a" />
+        <option name="FOREGROUND" value="44b6cb" />
       </value>
     </option>
     <option name="PHP_PRIVATE_INSTANCE_METHOD">
       <value>
-        <option name="FOREGROUND" value="358cb" />
+        <option name="FOREGROUND" value="333333" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_PROTECTED_INSTANCE_FIELD">
@@ -186,7 +194,8 @@
     </option>
     <option name="PHP_PROTECTED_INSTANCE_METHOD">
       <value>
-        <option name="FOREGROUND" value="358cb" />
+        <option name="FOREGROUND" value="333333" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_SCRIPTING_BACKGROUND">
@@ -199,16 +208,17 @@
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
+    <option name="PHP_STRING">
+      <value>
+        <option name="FOREGROUND" value="932b2a" />
+      </value>
+    </option>
     <option name="PHP_THIS_VAR">
       <value>
         <option name="FOREGROUND" value="0" />
       </value>
     </option>
-    <option name="PHP_VAR">
-      <value>
-        <option name="FOREGROUND" value="932b2a" />
-      </value>
-    </option>
+    <option name="PHP_VAR" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="WARNING_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="ebc700" />
