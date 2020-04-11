@@ -3,7 +3,7 @@
     <property name="created">2020-03-12T09:47:09</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.3.0.0</property>
-    <property name="modified">2020-04-07T09:44:06</property>
+    <property name="modified">2020-04-10T13:31:00</property>
     <property name="originalScheme">Visual Studio Code Dark Plus</property>
   </metaInfo>
   <colors>
@@ -460,6 +460,9 @@
         <option name="FOREGROUND" value="ce9178" />
       </value>
     </option>
+    <option name="HTML_CODE">
+      <value />
+    </option>
     <option name="HTML_TAG">
       <value>
         <option name="FOREGROUND" value="808080" />
@@ -532,10 +535,13 @@
     <option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
       <value />
     </option>
-    <option name="KOTLIN_LABEL">
+    <option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
       <value>
-        <option name="FOREGROUND" value="499cd5" />
+        <option name="FONT_TYPE" value="1" />
       </value>
+    </option>
+    <option name="KOTLIN_LABEL">
+      <value />
     </option>
     <option name="KOTLIN_LOCAL_VARIABLE">
       <value />
@@ -655,8 +661,8 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
+        <option name="BACKGROUND" value="99ccbb" />
         <option name="FONT_TYPE" value="1" />
-        <option name="EFFECT_COLOR" value="878787" />
       </value>
     </option>
     <option name="PHP_ALIAS_REFERENCE">
