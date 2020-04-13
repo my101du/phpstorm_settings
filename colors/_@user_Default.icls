@@ -3,7 +3,7 @@
     <property name="created">2019-12-04T08:28:00</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2020-04-13T14:15:25</property>
+    <property name="modified">2020-04-13T16:31:44</property>
     <property name="originalScheme">Default</property>
   </metaInfo>
   <colors>
@@ -145,11 +145,6 @@
         <option name="FOREGROUND" value="8d1f2a" />
       </value>
     </option>
-    <option name="JS.STRING">
-      <value>
-        <option name="FOREGROUND" value="15893a" />
-      </value>
-    </option>
     <option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
       <value>
         <option name="FONT_TYPE" value="1" />
@@ -211,9 +206,15 @@
         <option name="FOREGROUND" value="ce1f27" />
       </value>
     </option>
+    <option name="PHP_OPERATION_SIGN">
+      <value>
+        <option name="FOREGROUND" value="ce1f27" />
+      </value>
+    </option>
     <option name="PHP_PARAMETER">
       <value>
         <option name="FOREGROUND" value="343434" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PHP_PARENTHESES">
@@ -246,11 +247,6 @@
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
-    <option name="PHP_STRING">
-      <value>
-        <option name="FOREGROUND" value="15893a" />
-      </value>
-    </option>
     <option name="PHP_THIS_VAR">
       <value>
         <option name="FOREGROUND" value="8d1f2a" />
@@ -259,6 +255,7 @@
     <option name="PHP_VAR">
       <value>
         <option name="FOREGROUND" value="343434" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="WARNING_ATTRIBUTES">
