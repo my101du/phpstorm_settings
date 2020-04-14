@@ -3,7 +3,7 @@
     <property name="created">2019-12-04T08:28:00</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2019.1.3.0.0</property>
-    <property name="modified">2020-04-14T09:57:12</property>
+    <property name="modified">2020-04-14T11:36:40</property>
     <property name="originalScheme">Default</property>
   </metaInfo>
   <colors>
@@ -214,8 +214,7 @@
     </option>
     <option name="PHP_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="343434" />
-        <option name="FONT_TYPE" value="1" />
+        <option name="FOREGROUND" value="8d1f2a" />
       </value>
     </option>
     <option name="PHP_PARENTHESES">
@@ -248,6 +247,12 @@
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
+    <option name="PHP_STRING">
+      <value>
+        <option name="FOREGROUND" value="555555" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="PHP_THIS_VAR">
       <value>
         <option name="FOREGROUND" value="8d1f2a" />
@@ -255,8 +260,7 @@
     </option>
     <option name="PHP_VAR">
       <value>
-        <option name="FOREGROUND" value="343434" />
-        <option name="FONT_TYPE" value="1" />
+        <option name="FOREGROUND" value="8d1f2a" />
       </value>
     </option>
     <option name="WARNING_ATTRIBUTES">
