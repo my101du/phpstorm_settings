@@ -3,7 +3,7 @@
     <property name="created">2020-04-20T09:19:35</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2020.1.0.0</property>
-    <property name="modified">2020-04-20T09:26:37</property>
+    <property name="modified">2020-04-20T09:48:50</property>
     <property name="originalScheme">IntelliJ Light</property>
   </metaInfo>
   <colors>
@@ -279,9 +279,35 @@
         <option name="FOREGROUND" value="830091" />
       </value>
     </option>
+    <option name="JS.INSTANCE_MEMBER_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="1256cb" />
+      </value>
+    </option>
+    <option name="JS.KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="cc0000" />
+      </value>
+    </option>
+    <option name="JS.LOCAL_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="1256cb" />
+      </value>
+    </option>
     <option name="JS.LOCAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="248f8f" />
+        <option name="FOREGROUND" value="8d1f2a" />
+      </value>
+    </option>
+    <option name="JS.OPERATION_SIGN">
+      <value>
+        <option name="FOREGROUND" value="cc0000" />
+      </value>
+    </option>
+    <option name="JS.PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="1256cb" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="JS.REGEXP">
@@ -318,9 +344,50 @@
         <option name="BACKGROUND" value="c9ecec" />
       </value>
     </option>
+    <option name="PHP_INSTANCE_METHOD">
+      <value>
+        <option name="FOREGROUND" value="1256cb" />
+      </value>
+    </option>
+    <option name="PHP_KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="cc0000" />
+      </value>
+    </option>
+    <option name="PHP_OPERATION_SIGN">
+      <value>
+        <option name="FOREGROUND" value="cc0000" />
+      </value>
+    </option>
+    <option name="PHP_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="8d1f2a" />
+      </value>
+    </option>
+    <option name="PHP_PRIVATE_INSTANCE_METHOD">
+      <value>
+        <option name="FOREGROUND" value="1256cb" />
+      </value>
+    </option>
+    <option name="PHP_PROTECTED_INSTANCE_METHOD">
+      <value>
+        <option name="FOREGROUND" value="1256cb" />
+      </value>
+    </option>
     <option name="PHP_SCRIPTING_BACKGROUND">
       <value>
         <option name="BACKGROUND" value="ffffff" />
+      </value>
+    </option>
+    <option name="PHP_STATIC_METHOD">
+      <value>
+        <option name="FOREGROUND" value="1256cb" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="PHP_VAR">
+      <value>
+        <option name="FOREGROUND" value="8d1f2a" />
       </value>
     </option>
     <option name="PROPERTIES.KEY">
