@@ -2,10 +2,8 @@
   <component name="FindSettings">
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
-    <option name="localRegularExpressions" value="true" />
-    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.php,*.js,*.sql" />
+    <option name="FILE_MASK" value="*.*" />
     <mask>*.css</mask>
     <mask>*.html</mask>
     <mask>*.xml</mask>
@@ -16,7 +14,6 @@
     <mask>*.phtml</mask>
     <mask>*.hphp</mask>
     <mask>*model.php</mask>
-    <mask>*.*</mask>
     <mask>*_view.*</mask>
     <mask>*.sql</mask>
     <mask>,*.sql</mask>
@@ -26,5 +23,6 @@
     <mask>*.php</mask>
     <mask>*.php,*.js,*.sql,*.css</mask>
     <mask>*.php,*.js,*.sql</mask>
+    <mask>*.*</mask>
   </component>
 </application>

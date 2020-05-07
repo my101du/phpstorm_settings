@@ -1,9 +1,0 @@
-<application>
-  <component name="WebServers">
-    <option name="servers">
-      <webServer id="d8518582-6076-4c5e-b4f1-76625181a2ff" name="dev-helper" url="http://localhost:9001">
-        <fileTransfer accessType="LOCAL" port="0" />
-      </webServer>
-    </option>
-  </component>
-</application>
