@@ -3,7 +3,7 @@
     <property name="created">2020-04-20T09:19:35</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2020.1.0.0</property>
-    <property name="modified">2020-05-06T15:49:12</property>
+    <property name="modified">2020-05-08T15:13:45</property>
     <property name="originalScheme">IntelliJ Light</property>
   </metaInfo>
   <colors>
@@ -295,7 +295,11 @@
         <option name="FOREGROUND" value="1256cb" />
       </value>
     </option>
-    <option name="JS.LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="JS.LOCAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="871094" />
+      </value>
+    </option>
     <option name="JS.OPERATION_SIGN">
       <value>
         <option name="FOREGROUND" value="cc0000" />
@@ -378,7 +382,11 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="PHP_VAR" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="PHP_VAR">
+      <value>
+        <option name="FOREGROUND" value="871094" />
+      </value>
+    </option>
     <option name="PROPERTIES.KEY">
       <value>
         <option name="FOREGROUND" value="83080" />
