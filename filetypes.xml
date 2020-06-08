@@ -1,8 +1,0 @@
-<application>
-  <component name="FileTypeManager" version="17">
-    <extensionMap>
-      <mapping pattern="0bedca17284e77a3ea3d6fea1dfff898" type="PLAIN_TEXT" />
-      <removed_mapping pattern="*_view.php" approved="true" type="JavaScript" />
-    </extensionMap>
-  </component>
-</application>
