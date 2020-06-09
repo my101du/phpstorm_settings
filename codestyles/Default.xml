@@ -5,6 +5,8 @@
     <option name="HTML_ATTRIBUTE_WRAP" value="2" />
   </HTMLCodeStyleSettings>
   <JSCodeStyleSettings version="0">
+    <option name="FORCE_SEMICOLON_STYLE" value="true" />
+    <option name="ALIGN_VAR_STATEMENTS" value="2" />
     <option name="REFORMAT_C_STYLE_COMMENTS" value="true" />
   </JSCodeStyleSettings>
   <PHPCodeStyleSettings>
@@ -19,6 +21,9 @@
     <option name="BLOCK_COMMENT_AT_FIRST_COLUMN" value="false" />
   </codeStyleSettings>
   <codeStyleSettings language="JavaScript">
+    <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
+    <option name="ALIGN_MULTILINE_BINARY_OPERATION" value="true" />
+    <option name="ALIGN_MULTILINE_ARRAY_INITIALIZER_EXPRESSION" value="true" />
     <option name="WRAP_COMMENTS" value="true" />
   </codeStyleSettings>
   <codeStyleSettings language="PHP">
